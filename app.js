@@ -2,14 +2,14 @@ const express=require("express")
 const bodyParser=require("body-parser")
 const ejs=require("ejs")
 const mongoose=require("mongoose")
-
+const credenciales = require('./secret');
 const app= express();
 
 app.use(express.static("public"))
 app.set("view engine","ejs")
 app.use(bodyParser.urlencoded({extended:true}))
 
-mongoose.connect("mongodb+srv://admin-ulises:Test-uli123@cluster0.0ayal.mongodb.net/AuthSec", { useNewUrlParser: true });
+mongoose.connect(credenciales.secreta(), { useNewUrlParser: true });
 
 const userSchema={
     email:String,
