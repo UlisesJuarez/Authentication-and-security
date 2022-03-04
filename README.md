@@ -1,6 +1,6 @@
 # Web security
 
-En el presente proyecto se hizo de OAuth 2.0  para implementar un signup login seguro con Node.js
+En el presente proyecto se hizo uso de OAuth 2.0  para implementar un signup login seguro con Node.js
 
 Se muestra la pagina de inicio.
 
